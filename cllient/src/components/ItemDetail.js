@@ -50,4 +50,3 @@ const ItemDetail = ({ id }) => {
 }
 
 export default ItemDetail;
-
