@@ -1,0 +1,26 @@
+.products-not-found {
+  background: #fff;
+  border-radius: 4px;
+  padding: 32px;
+  text-align: center;
+}
+
+.products-not-found p {
+  margin: 0 0 15px;
+  font-size: 21px;
+}
+
+.products-not-found ul {
+  text-align: left;
+}
+
+.container,
+.results-item,
+.search-results {
+  padding: 0;
+}
+
+ul {
+  width: 60%;
+  margin: auto;
+}

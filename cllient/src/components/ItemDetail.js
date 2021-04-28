@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import itemsService from '../services/item';
 import Loader from './Loader';
-import prices from '../helpers/prices';
-import Message from './Message';
+import NotFoundProductsMessage from './NotFoundProductsMessage'
 
 const ItemDetail = ({ id }) => {
     const [item, setItem] = useState(null);
@@ -30,7 +29,6 @@ const ItemDetail = ({ id }) => {
                             {
                                 item.price.amount !== null &&
                                 <div className="item-price">
-                                    {prices.formatPrice(item.price.amount)}
                                     <div className="decimals">{String(item.price.decimals).padEnd(2, '0')}</div>
                                 </div>
                             }
@@ -46,7 +44,7 @@ const ItemDetail = ({ id }) => {
         }
     }
 
-    return error ? <Message msg="No se encontró el producto." type="error" /> : itemInfo();
+    return error ? <NotFoundProductsMessage type="error" /> : itemInfo();
 }
 
 export default ItemDetail;

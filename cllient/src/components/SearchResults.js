@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Item from './Item';
 import itemsService from '../services/item';
 import Loader from './Loader';
-import Message from './Message';
+import NotFoundProductsMessage from './NotFoundProductsMessage';
 
 const SearchResults = ({
     location,
@@ -31,7 +31,7 @@ const SearchResults = ({
 
     const itemsToShow = () => {
         if (items.length === 0) {
-            return <Message msg="No se encontraron resultados" type="error" />
+            return <NotFoundProductsMessage type="error" />
         } else {
             return items.map(item => <Item key={item.id} {...item} />)
         }
