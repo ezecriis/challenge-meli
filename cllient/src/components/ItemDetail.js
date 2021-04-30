@@ -29,7 +29,7 @@ const ItemDetail = ({ id }) => {
                             {
                                 item.price.amount !== null &&
                                 <div className="item-price">
-                                    <div className="decimals">{String(item.price.decimals).padEnd(2, '0')}</div>
+                                    <div className="decimals"> $ {(item.price.amount)}</div>
                                 </div>
                             }
                             <button className="buy-item">Comprar</button>

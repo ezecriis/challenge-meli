@@ -15,4 +15,3 @@ const MainContainer = props => {
 }
 
 export default MainContainer;
-

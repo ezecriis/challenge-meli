@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/Logo_ML@2x.png';
 import searchIcon from '../assets/ic_Search.png';
-import { withRouter } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 const Header = ({
     history,
@@ -37,6 +36,7 @@ const Header = ({
                         value={newSearchString}
                         onChange={event => setNewSearchString(event.target.value)}
                         placeholder="Nunca dejes de buscar"
+                        autoFocus
                     />
                     <button type="submit">
                         <img src={searchIcon} alt="Buscar" />

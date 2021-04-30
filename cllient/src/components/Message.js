@@ -1,6 +1,5 @@
 import notFoundIcon from '../assets/not_found.png';
-import lookMl from '../assets/look_ml.png'
-
+import lookMl from '../assets/look_ml.png';
 
 const Message = ({ type, msg }) => {
     const src = type === 'error' ? notFoundIcon : lookMl;
