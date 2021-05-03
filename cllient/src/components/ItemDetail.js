@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import itemsService from '../services/item';
 import Loader from './Loader';
-import NotFoundProductsMessage from './NotFoundProductsMessage'
+import NotFoundProductsMessage from './NotFoundProductsMessage';
 
 const ItemDetail = ({ id }) => {
     const [item, setItem] = useState(null);
