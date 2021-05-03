@@ -1,7 +1,7 @@
 /*
  *   App entry point.
  *   Hace un import la aplicación desde el archivo
- *   app.js y luego inicia la aplicación.
+ *   app.js, luego inicia la aplicación.
  */
 
 const config = require('./utils/config');
